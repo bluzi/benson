@@ -1,0 +1,26 @@
+{
+    "name": "benson",
+    "version": "1.0",
+    "description": "",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            },
+            "description": "Launch benson"
+        }
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}

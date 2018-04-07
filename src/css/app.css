@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
+body {
+    background: #fff;
+}
+
+#benson {
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%);
+    background-color: #E2E2E2;
+    width: 100%;
+    min-width: 500px;
+    min-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif; */
+    min-width: 500px;
+    max-width: 500px;
+}
+
+#benson .search-bar {
+    width: 100%;
+    background-color: #D0D0D0;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    font-size: 30px;
+    outline: none;
+    border-radius: 5px;
+    height: 65px;
+    overflow: hidden;
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    opacity: 0.2;
+}
+
+#benson #results {
+    list-style: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#benson #results li {
+    width: 100%;
+    /* background-color: #D0D0D0; */
+    padding: 10px 10px;
+    box-sizing: border-box;
+    line-height: 40px;
+    font-size: 20px;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#benson #results li.selected {
+    background-color: #D0D0D0;
+}
+
+#benson #results li:not(:last-child) {
+    border-bottom: 1px solid #D0D0D0;
+}
+
+#benson #results li img {
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+#benson #results li .type {
+    font-size: 10px;
+    font-family: Arial;
+}
+
+#benson #results li .command {
+    float: right;
+    opacity: 0.1;
+    font-family: Arial;
+}
+
+/* #benson #results li:hover {
+    background-color: #D0D0D0;
+} */
