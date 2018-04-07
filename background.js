@@ -3,7 +3,7 @@ const tabs = {
         new Promise((resolve) => {
             chrome.tabs.getAllInWindow(null, tabs => {
                 const result =
-                    tabs.filter(tab => tab.title.includes(term) || tab.url.includes(term))
+                    tabs.filter(tab => tab.title.toLowerCase().includes(term.toLowerCase()))
                         .map(tab => ({
                             type: 'tab',
                             description: tab.title,
